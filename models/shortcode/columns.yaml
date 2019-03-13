@@ -1,0 +1,27 @@
+# ===================================
+#  Column Definitions
+# ===================================
+
+columns:
+  name:
+    label: Name
+    type: text
+    searchable: yes
+
+  code:
+    label: Shortcode
+    type: text
+    searchable: yes
+    format: '[%s]'
+
+  has_preview:
+    label: Preview Mode
+    type: switch
+    searchable: no
+    align: right
+
+  created_at:
+    label: Created At
+    type: text
+    searchable: no
+    invisible: true

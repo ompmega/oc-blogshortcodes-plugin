@@ -1,0 +1,21 @@
+# ===================================
+#  Field Definitions
+# ===================================
+
+fields:
+  name:
+    label: Name
+    span: left
+
+  code:
+    label: Code
+    span: right
+    preset:
+      field: name
+      type: slug
+
+#  has_preview:
+#    label: Enable preview mode
+#    type: switch
+#    span: full
+#    comment: Render shortcode markup inside the preview window.

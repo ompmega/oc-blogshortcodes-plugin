@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Shortcode
+
+# Model Form Field configuration
+form: $/ompmega/blogshortcodes/models/shortcode/fields.yaml
+
+# Model Class name
+modelClass: Ompmega\BlogShortcodes\Models\Shortcode
+
+# Default redirect location
+defaultRedirect: ompmega/blogshortcodes/shortcodes
+
+# Create page
+create:
+    title: Create Shortcode
+    redirect: ompmega/blogshortcodes/shortcodes/update/:id
+    redirectClose: ompmega/blogshortcodes/shortcodes
+
+# Update page
+update:
+    title: Edit Shortcode
+    redirect: ompmega/blogshortcodes/shortcodes
+    redirectClose: ompmega/blogshortcodes/shortcodes
+
+# Preview page
+preview:
+    title: Preview Shortcode
