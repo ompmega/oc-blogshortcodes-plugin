@@ -107,7 +107,7 @@ class Plugin extends PluginBase
                     $shortcodeParams = str_replace('&quot;', '', $params);
 
                     $cms = new CmsController();
-                    $buffer = $cms->renderPartial(sprintf('shortcodes/_%s', $shortcode->code), $shortcodeParams);
+                    $buffer = $cms->renderPartial(sprintf('shortcodes/%s', $shortcode->code), $shortcodeParams);
                     return str_replace(["\r", "\n"], '', $buffer);
                 });
             }
